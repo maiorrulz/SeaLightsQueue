@@ -1,41 +1,10 @@
 var assert = require('assert');
-const request = require('supertest');
 const express = require('express');
 var queueManager = require('../queue/queueManager');
-
-const app = express();
-
+var Queue = require('../queue/queue');
 
 
-describe('Helllo', function () {
-   it("will be cool", function () {
-        try {
-            var vb = queueManager.getAllQueueName();
-            queueManager.q
-            queueManager.createNewQueue("bla");
-            queueManager.createNewQueue("wow");
-            queueManager.createNewQueue("sos");
-            queueManager.enqueueElement("1", "bla");
-            queueManager.enqueueElement("2", "bla");
-            queueManager.enqueueElement("3", "bla");
-            var t = queueManager.getAllQueueName();
-            console.log("Deq element : " + queueManager.dequeueElement("bla"));
-            console.log("Snapshot : " + queueManager.getQueueSnapshot("bla"));
-
-            queueManager.createNewQueue("bla");
-            console.log("Snapshot : " + queueManager.getQueueSnapshot("bla"));
-
-            queueManager.createNewQueue("wow");
-            console.log("Snapshot : " + queueManager.getQueueSnapshot("wow"));
-
-
-        } catch (err) {
-            console.log(err);
-        }
-   })
-});
-
-var queue = require('../queue/queue');
+var queue = new Queue();
 
 beforeEach(function() {
     queue.clearQueue();
@@ -52,10 +21,10 @@ describe('Enqueue Test', function () {
 });
 
 describe("Enqueue null element", function () {
-    it("Queue should not enqueue null idefined element", function () {
-        queue.enqueue(null);
-        queue.enqueue(undefined);
+    it("Queue should not enqueue null or undefined element and throw error", function () {
 
+        assert.throws( queue.enqueue, Error, "incorrect null value");
+        assert.throws(function () {queue.enqueue(null)}, Error);
         assert(queue.getQueueSize() === 0);
     })
 });
@@ -67,8 +36,11 @@ describe('Dequeue FIFO', function () {
         queue.enqueue("third");
 
         var element = queue.dequeue();
-
         assert(element === "first");
+        element = queue.dequeue()
+        assert(element === "second");
+        element = queue.dequeue()
+        assert(element === "third");
     })
 });
 

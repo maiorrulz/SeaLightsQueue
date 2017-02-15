@@ -71,6 +71,24 @@ var QueueManager = function () {
 
         return Object.keys(queueArray);
     }
+
+    //***************FOR Testing Purposes *************
+
+    this.clearAllQueues = function () {
+        queueArray = {};
+    }
+
+    this.injectQueue = function (name, queue) {
+        queueArray[name] = queue;
+    }
+    this.getQueue = function (name) {
+        var q = queueArray[name];
+        if(q !== undefined && q !==null) {
+            return Object.create(q);
+        } else {
+             return null;
+        }
+    }
 }
 
 module.exports = new QueueManager();

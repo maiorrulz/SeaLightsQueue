@@ -1,10 +1,10 @@
 // Code goes here
 var qlist=[];
-
+const BASE_URL = window.location.origin;
 $(function() {
 
     $.ajax({
-        url: "http://localhost:3000/queuecontainer/allqueues",
+        url: BASE_URL + "/queuecontainer/allqueues",
         type: "get",
         success: function (response) {
             console.log(response);
@@ -26,7 +26,7 @@ $(function() {
         var newQueueContainer = appendQueue(qname);
 
         $.ajax({
-            url: "http://localhost:3000/queuecontainer/",
+            url: BASE_URL + "/queuecontainer/",
             type: "post",
             data: {qname:qname},
             success: function (response) {
@@ -53,7 +53,7 @@ $(function() {
             return;
         }
         $.ajax({
-            url: "http://localhost:3000/queuecontainer/queue/" + queue_name,
+            url: BASE_URL + "/queuecontainer/queue/" + queue_name,
             type: "put",
             data:{element:element},
             success: function(response) {
@@ -70,7 +70,7 @@ $(function() {
         console.log('queue name', queue_name);
 
         $.ajax({
-            url: "http://localhost:3000/queuecontainer/queue/" + queue_name,
+            url: BASE_URL + "/queuecontainer/queue/" + queue_name,
             type: "post",
             success: function(response) {
                 console.log("handleUnconnectedUser Response : " + response);
@@ -86,7 +86,7 @@ $(function() {
         var queue_name = $(this).parents('.queue-container').data('queue_name');
         console.log('queue name', queue_name);
         $.ajax({
-            url: "http://localhost:3000/queuecontainer/queue/" + queue_name,
+            url: BASE_URL + "/queuecontainer/queue/" + queue_name,
             type: "get",
             success: function(response) {
                 console.log("handleUnconnectedUser Response : " + response);

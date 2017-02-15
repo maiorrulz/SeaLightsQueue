@@ -2,7 +2,7 @@
 
 var Queue = function () {
 
-    this.queue = [];
+    this._queue = [];
 };
 
 
@@ -16,7 +16,7 @@ var Queue = function () {
 
         console.log("Pushing Element : " + element);
         if (element !== undefined && element !== null){
-            this.queue.push(element);
+            this._queue.push(element);
         }else{
             throw new Error("incorrect null value")
         }
@@ -29,8 +29,8 @@ var Queue = function () {
      * @returns {*} return dequeued element or throw exception if queue is  empty.
      */
     Queue.prototype.dequeue = function () {
-        if (this.queue.length > 0) {
-            var i = this.queue.shift();
+        if (this._queue.length > 0) {
+            var i = this._queue.shift();
             console.log("Shifting Element " + i);
             return i;
         }
@@ -44,16 +44,18 @@ var Queue = function () {
      * @returns {Array} queue array
      */
     Queue.prototype.getSnapshot = function () {
-        return this.queue;
+        return this._queue;
     };
 
+
+    //*******************************FOR TESTING PURPOSES ************
     /**
      * Get queue size
      * @returns {Number} - number of elements in queue
      */
     Queue.prototype.getQueueSize = function () {
 
-        return this.queue.length;
+        return this._queue.length;
     };
 
     /**
@@ -61,7 +63,7 @@ var Queue = function () {
      */
     Queue.prototype.clearQueue = function () {
 
-        this.queue.length =0;
+        this._queue.length =0;
     };
 
 module.exports = Queue;
