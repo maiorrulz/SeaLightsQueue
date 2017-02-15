@@ -34,7 +34,7 @@ $(function() {
                 $("#q-name").val("");
             },
             error: function (xhr) {
-                alert(xhr);
+                alert(xhr.responseText);
             }
         });
 
@@ -111,13 +111,6 @@ function appendQueue(name) {
         "<p><button type='button' class='btn btn-primary btn-sm dequeue-btn'>Dequeue</button></p>" +
         "<button type='button' class='btn btn-primary btn-sm snapshot-btn'>Snapshot</button>" +
         "</div>";
-
-    if(name === undefined || name == null || name.length <= 0 || qlist.indexOf(name) >= 0) {
-        return;
-    }
-
-    // qlist.push(name);
-    // console.log(qlist);
 
     var $queueContainer = $(q);
     $queueContainer.data('queue_name', name);

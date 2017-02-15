@@ -1,13 +1,16 @@
 var Queue = require("../queue/queue");
 
 
-
+/**
+ * QueueManager is singleton, this way we do not need to use prototype.
+ * @constructor
+ */
 var QueueManager = function () {
 
     var queueArray = {};
     /**
-     *
-     * @param name
+     *Create new queue with given name
+     * @param name - name of queueu
      */
     this.createNewQueue =  function  (name) {
 
@@ -21,9 +24,9 @@ var QueueManager = function () {
         }
     }
     /**
-     *
-     * @param element
-     * @param name
+     *Enqueue element to queue with given name
+     * @param element - element to enqueue
+     * @param name - name of queue to enqueue in.
      */
     this.enqueueElement = function (element, name) {
 
@@ -34,9 +37,9 @@ var QueueManager = function () {
         q.enqueue(element);
     }
     /**
-     *
-     * @param name
-     * @returns {*}
+     *Dequeue element from named queue
+     * @param name - name of the queue dequeue from
+     * @returns {*} returns dequeued element
      */
     this.dequeueElement = function (name) {
         var q = queueArray[name]
@@ -47,9 +50,9 @@ var QueueManager = function () {
     }
 
     /**
-     *
-     * @param name
-     * @returns {*}
+     *Get snapshot of named queue
+     * @param name - name of queue
+     * @returns {*} returns all element from queue(name)
      */
     this.getQueueSnapshot  = function (name) {
 
@@ -61,8 +64,8 @@ var QueueManager = function () {
     }
 
     /**
-     *
-     * @returns {Array}
+     * Returns names of all created queues in the system
+     * @returns {Array} name of all queues
      */
     this.getAllQueueName = function () {
 
