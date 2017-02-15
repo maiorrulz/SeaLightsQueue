@@ -2,11 +2,10 @@
 
 var Queue = function () {
 
+    this.queue = [];
 };
 
-(function () {
 
-    var queue = [];
 
     /**
      * Enqueue element to Queue. Element goes to the end of queue
@@ -16,8 +15,11 @@ var Queue = function () {
     Queue.prototype.enqueue = function (element) {
 
         console.log("Pushing Element : " + element);
-        if (element !== undefined && element !== null)
-            queue.push(element);
+        if (element !== undefined && element !== null){
+            this.queue.push(element);
+        }else{
+            throw new Error("incorrect null value")
+        }
     };
 
 
@@ -27,13 +29,13 @@ var Queue = function () {
      * @returns {*} return dequeued element or throw exception if queue is  empty.
      */
     Queue.prototype.dequeue = function () {
-        if (queue.length > 0) {
-            var i = queue.shift();
+        if (this.queue.length > 0) {
+            var i = this.queue.shift();
             console.log("Shifting Element " + i);
             return i;
         }
         else {
-            throw new Error("nothing to dequeue");
+            return;
         }
     };
 
@@ -42,8 +44,7 @@ var Queue = function () {
      * @returns {Array} queue array
      */
     Queue.prototype.getSnapshot = function () {
-        console.log("Snapshot : " + this.queue);
-        return queue;
+        return this.queue;
     };
 
     /**
@@ -52,7 +53,7 @@ var Queue = function () {
      */
     Queue.prototype.getQueueSize = function () {
 
-        return queue.length;
+        return this.queue.length;
     };
 
     /**
@@ -60,8 +61,7 @@ var Queue = function () {
      */
     Queue.prototype.clearQueue = function () {
 
-        queue.length =0;
+        this.queue.length =0;
     };
-})();
 
-module.exports = new Queue();
+module.exports = Queue;

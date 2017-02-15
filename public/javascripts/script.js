@@ -2,26 +2,58 @@
 var qlist=[];
 
 $(function() {
-    $(".q-create").on('click', function(){
-        var newQueueContainer = appendQueue($("#q-name").val());
 
-        $("#q-name").val("");
-
-        $("body").append(newQueueContainer);
+    $.ajax({
+        url: "http://localhost:3000/queuecontainer/allqueues",
+        type: "get",
+        success: function (response) {
+            console.log(response);
+            for(i=0; i < response.length ; i++) {
+                $("body").append(appendQueue(response[i]));
+            }
+        },
+        error: function (xhr) {
+            alert(xhr);
+        }
     });
 
+
+    $(".q-create").on('click', function(){
+        var qname = $("#q-name").val();
+        if(qname.indexOf(" ") > -1) {
+            qname = qname.substr(0, qname.indexOf(" "));
+        }
+        var newQueueContainer = appendQueue(qname);
+
+        $.ajax({
+            url: "http://localhost:3000/queuecontainer/",
+            type: "post",
+            data: {qname:qname},
+            success: function (response) {
+                $("body").append(newQueueContainer);
+                $("#q-name").val("");
+            },
+            error: function (xhr) {
+                alert(xhr);
+            }
+        });
+
+    });
+
+
+    //
     $('body').on('click', '.enqueue-btn', function () {
         var queue_name = $(this).parents('.queue-container').data('queue_name');
         console.log('queue name', queue_name);
 
-        var element = $(".enqueue-val").val();
-        $(".enqueue-val").val("");
+        var element = $("#" + queue_name).val();
+        $("#" + queue_name).val("");
         if(element === undefined || element == null || element.length <= 0 )
         {
             return;
         }
         $.ajax({
-            url: "http://localhost:3000/queue",
+            url: "http://localhost:3000/queuecontainer/queue/" + queue_name,
             type: "put",
             data:{element:element},
             success: function(response) {
@@ -38,7 +70,7 @@ $(function() {
         console.log('queue name', queue_name);
 
         $.ajax({
-            url: "http://localhost:3000/queue",
+            url: "http://localhost:3000/queuecontainer/queue/" + queue_name,
             type: "post",
             success: function(response) {
                 console.log("handleUnconnectedUser Response : " + response);
@@ -54,11 +86,11 @@ $(function() {
         var queue_name = $(this).parents('.queue-container').data('queue_name');
         console.log('queue name', queue_name);
         $.ajax({
-            url: "http://localhost:3000/queue",
+            url: "http://localhost:3000/queuecontainer/queue/" + queue_name,
             type: "get",
             success: function(response) {
                 console.log("handleUnconnectedUser Response : " + response);
-                $(".label-q-1").text("[" + response + "]");
+                $("." +queue_name).text("[" + response + "]");
             },
             error: function(xhr) {
                 console.log("Error has occured:" + xhr);
@@ -71,10 +103,10 @@ $(function() {
 function appendQueue(name) {
     var q = "<div class='queue-container queue q-" + name +"'> " +
         "<h4 class='q-title'>"+ name +"</h4>" +
-        "<lable class='label-q'>[]</lable>" +
+        "<lable class='label-q "+ name +"'>[]</lable>" +
         "<p>" +
         "<button type='button' class='btn btn-primary btn-sm enqueue-btn'>Enqueue</button>" +
-        "<input type='text' class='enqueue-val'>" +
+        "<input type='text' id='" + name +"' class='enqueue-val'>" +
         "</p>" +
         "<p><button type='button' class='btn btn-primary btn-sm dequeue-btn'>Dequeue</button></p>" +
         "<button type='button' class='btn btn-primary btn-sm snapshot-btn'>Snapshot</button>" +
@@ -84,8 +116,8 @@ function appendQueue(name) {
         return;
     }
 
-    qlist.push(name);
-    console.log(qlist);
+    // qlist.push(name);
+    // console.log(qlist);
 
     var $queueContainer = $(q);
     $queueContainer.data('queue_name', name);
