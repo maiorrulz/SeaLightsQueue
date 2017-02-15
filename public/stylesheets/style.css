@@ -1,0 +1,43 @@
+/* Styles go here */
+
+
+.queue {
+
+  margin-top : 30px;
+  /* display: none; */
+  border:1px solid blue;
+  padding : 10px;
+
+}
+
+.enqueu-btn {
+
+}
+.label-q {
+
+  color: blue;
+  background-color: #d8d8de;
+  /*height: 30px;*/
+  /*width: 150px;*/
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  display : inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+
+
+}
+
+.q-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:red;
+}
+
+.enqueue-val {
+  width : 40px;
+}

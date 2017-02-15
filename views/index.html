@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="javascripts/script.js"></script>
+</head>
+
+<body>
+<h1>Queue App</h1>
+
+<!--<select class="custom-select select-q">-->
+<!--  <option selected>Number of queues</option>-->
+<!--  <option value="1">1</option>-->
+<!--  <option value="2">2</option>-->
+<!--  <option value="3">3</option>-->
+<!--</select>-->
+
+<div>
+    <label>Name of Queue</label>
+    <input id="q-name" type="text">
+    <button type="button" class="btn btn-primary btn-sm q-create">Create</button>
+</div>
+
+
+
+<div class="queue queue-1">
+    <h4 class="q-title">Queue Name</h4>
+    <lable class="label-q-1 label-q">[]</lable>
+
+    <p>
+        <button type="button" class="btn btn-primary btn-sm enqueue-btn">Enqueue</button>
+        <input type="text" class="enqueue-val">
+    </p>
+    <p><button type="button" class="btn btn-primary btn-sm dequeue-btn">Dequeue</button></p>
+    <p><button type="button" class="btn btn-primary btn-sm snapshot-btn">Snapshot</button></p>
+
+</div>
+
+<!--<div class="queue queue-2">-->
+<!--    <lable class="label-q-2 label-q">[]</lable>-->
+<!--    <button type="button" class="btn btn-primary btn-sm enqueu-btn-2">Enqueue</button>-->
+<!--    <button type="button" class="btn btn-primary btn-sm enqueu-btn-2">Dequeue</button>-->
+<!--    <button type="button" class="btn btn-primary btn-sm enqueu-btn-2">Snapshot</button>-->
+<!--</div>-->
+
+<!--<div class="queue queue-3">-->
+<!--    <lable class="label-q-3 label-q">[]</lable>-->
+<!--    <button type="button" class="btn btn-primary btn-sm enqueu-btn-3">Enqueue</button>-->
+<!--    <button type="button" class="btn btn-primary btn-sm enqueu-btn-3">Dequeue</button>-->
+<!--    <button type="button" class="btn btn-primary btn-sm enqueu-btn-3">Snapshot</button>-->
+<!--</div>-->
+</html>
