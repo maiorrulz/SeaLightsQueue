@@ -15,7 +15,7 @@ router.post('/', function (req, res, next) {
     }
 });
 
-
+/* Dequeue element*/
 router.post('/queue/:qname', function(req, res, next) {
     try {
         var qname = req.params.qname;
