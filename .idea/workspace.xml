@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03a76c51-6677-4c59-813c-75c0860f6070" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/queue/myEmitter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/queue/queueManager.js" afterPath="$PROJECT_DIR$/queue/queueManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/queue.js" afterPath="$PROJECT_DIR$/routes/queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/IntegrationTests.js" afterPath="$PROJECT_DIR$/test/IntegrationTests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/queueTests.js" afterPath="$PROJECT_DIR$/test/queueTests.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -58,11 +52,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="queueTests.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="queueTests.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/queueTests.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -78,7 +72,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="myEmitter.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="myEmitter.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/queue/myEmitter.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="379">
@@ -190,10 +184,10 @@
         <option value="$PROJECT_DIR$/test/queueManagerTest.js" />
         <option value="$PROJECT_DIR$/test/IntegrationTests.js" />
         <option value="$PROJECT_DIR$/queue/myEmmiter.js" />
-        <option value="$PROJECT_DIR$/test/queueTests.js" />
         <option value="$PROJECT_DIR$/queue/queueManager.js" />
         <option value="$PROJECT_DIR$/routes/queue.js" />
         <option value="$PROJECT_DIR$/queue/myEmitter.js" />
+        <option value="$PROJECT_DIR$/test/queueTests.js" />
       </list>
     </option>
   </component>
@@ -563,7 +557,7 @@
       <workItem from="1487004136167" duration="16010000" />
       <workItem from="1487027179491" duration="29394000" />
       <workItem from="1487120882854" duration="18531000" />
-      <workItem from="1487186482048" duration="27630000" />
+      <workItem from="1487186482048" duration="27836000" />
     </task>
     <servers />
   </component>
@@ -600,7 +594,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91565000" />
+    <option name="totallyTimeSpent" value="91771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -974,14 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/queueTests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/queue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1002,6 +988,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/queueTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           <folding />
         </state>
       </provider>
