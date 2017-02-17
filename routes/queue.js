@@ -5,6 +5,22 @@ var queueManager = require('../queue/queueManager');
 /* Delete element from queue */
 
 
+router.get('/queue/:qname/longpoll', function (req, res, next) {
+
+    try {
+        var qname = req.params.qname;
+
+        var callback = function (value) {
+            res.send(value);
+        }
+
+        queueManager.longPollRequest(qname, callback);
+    } catch(ex) {
+        res.status(405).send(ex.message);
+    }
+
+});
+
 router.post('/', function (req, res, next) {
     try {
         var qname = req.body.qname;

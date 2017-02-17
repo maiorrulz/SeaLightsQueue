@@ -1,5 +1,7 @@
 var Queue = require("../queue/queue");
-
+var emitter = require('../queue/myEmitter');
+var uuid = require('node-uuid');
+const TIME_OUT = 10000;
 
 /**
  * QueueManager is singleton, this way we do not need to use prototype.
@@ -8,6 +10,22 @@ var Queue = require("../queue/queue");
 var QueueManager = function () {
 
     var queueArray = {};
+
+
+    this.longPollRequest = function (name, callback) {
+
+        var q = queueArray[name]
+        if(q === undefined || q === null) {
+            throw new Error("Undefined queue name");
+        }
+        if(q.getQueueSize() === 0) {
+            var id = uuid.v1();
+            emitter.on(name,id,callback);
+            setTimeout(function() {emitter.emitOnTimeout(name, id, "NONE")},TIME_OUT);
+        } else {
+            callback(q.dequeue());
+        }
+    }
     /**
      *Create new queue with given name
      * @param name - name of queueu
@@ -34,7 +52,11 @@ var QueueManager = function () {
         if(q === undefined || q === null) {
             throw new Error("Undefined queue name");
         }
-        q.enqueue(element);
+        if(emitter.isEventQueueEmpty(name)) {
+            q.enqueue(element);
+        } else {
+            emitter.emit(name,element);
+        }
     }
     /**
      *Dequeue element from named queue

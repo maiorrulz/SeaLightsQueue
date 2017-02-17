@@ -32,7 +32,7 @@ describe('GET /', function() {
 describe('POST /queuecontainer/queue/err', function() {
     it('respond with json', function() {
         return request(app)
-            .post('queuecontainer/queue/err')
+            .post('queuecontaisdfsdner/queue/')
             .expect(200)
             .then(function (res) {
                 console.log(res.body);

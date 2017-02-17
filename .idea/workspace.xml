@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03a76c51-6677-4c59-813c-75c0860f6070" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/queue/myEmitter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/queue/queueManager.js" afterPath="$PROJECT_DIR$/queue/queueManager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/queue.js" afterPath="$PROJECT_DIR$/routes/queue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/IntegrationTests.js" afterPath="$PROJECT_DIR$/test/IntegrationTests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/queueTests.js" afterPath="$PROJECT_DIR$/test/queueTests.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +28,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/routes/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="queue.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/queue/queue.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="15" />
+                <state relative-caret-position="493">
+                  <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -36,8 +51,8 @@
           <file leaf-file-name="queueManager.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/queue/queueManager.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+                <state relative-caret-position="357">
+                  <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -46,18 +61,8 @@
           <file leaf-file-name="queueTests.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/queueTests.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="www" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bin/www">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="59">
-                  <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -66,18 +71,38 @@
           <file leaf-file-name="queue.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/routes/queue.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+                <state relative-caret-position="306">
+                  <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="queueManagerTests.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/queueManagerTests.js">
+          <file leaf-file-name="myEmitter.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/queue/myEmitter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <state relative-caret-position="379">
+                  <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="timers.js" pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.4.7/core-modules/timers.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="194">
+                  <caret line="382" column="15" lean-forward="false" selection-start-line="382" selection-start-column="15" selection-end-line="382" selection-end-column="15" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -87,40 +112,18 @@
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="68">
-                  <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+                  <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="IntegrationTests.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="IntegrationTests.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/IntegrationTests.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+                <state relative-caret-position="578">
+                  <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="assert.js" pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.4.7/core-modules/assert.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="108" column="9" lean-forward="false" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/javascripts/script.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1496">
-                  <caret line="88" column="39" lean-forward="false" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
-                  <folding>
-                    <marker date="1487197121787" expanded="true" signature="3786:3789" ph="..." />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -133,7 +136,7 @@
             <entry file="file://$PROJECT_DIR$/routes/queue.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="289">
-                  <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+                  <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -182,12 +185,15 @@
         <option value="$PROJECT_DIR$/queue/Foo.js" />
         <option value="$PROJECT_DIR$/queue/queue.js" />
         <option value="$PROJECT_DIR$/test/queueTest.js" />
-        <option value="$PROJECT_DIR$/queue/queueManager.js" />
         <option value="$PROJECT_DIR$/public/javascripts/script.js" />
         <option value="$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.4.7/core-modules/assert.js" />
         <option value="$PROJECT_DIR$/test/queueManagerTest.js" />
-        <option value="$PROJECT_DIR$/routes/queue.js" />
         <option value="$PROJECT_DIR$/test/IntegrationTests.js" />
+        <option value="$PROJECT_DIR$/queue/myEmmiter.js" />
+        <option value="$PROJECT_DIR$/test/queueTests.js" />
+        <option value="$PROJECT_DIR$/queue/queueManager.js" />
+        <option value="$PROJECT_DIR$/routes/queue.js" />
+        <option value="$PROJECT_DIR$/queue/myEmitter.js" />
       </list>
     </option>
   </component>
@@ -373,23 +379,7 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="C:\Users\Alex\Documents\WebStormProjects\SeaLightsQueue\node_modules\mocha" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Mocha.POST /queuecontainer/queue/err.respond with json">
-    <configuration default="false" name="GET /user.respond with json" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/IntegrationTests.js</test-file>
-      <test-names>
-        <name value="GET /user" />
-        <name value="respond with json" />
-      </test-names>
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.bin\www">
     <configuration default="false" name="GET /user" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -448,6 +438,21 @@
       <test-names>
         <name value="POST /queuecontainer/queue/err" />
         <name value="respond with json" />
+      </test-names>
+      <method />
+    </configuration>
+    <configuration default="false" name="asdasd" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/queueTests.js</test-file>
+      <test-names>
+        <name value="asdasd" />
       </test-names>
       <method />
     </configuration>
@@ -526,19 +531,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Mocha.Tests" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.bin\www" />
-      <item index="2" class="java.lang.String" itemvalue="Mocha.GET /user.respond with json" />
-      <item index="3" class="java.lang.String" itemvalue="Mocha.GET /user" />
-      <item index="4" class="java.lang.String" itemvalue="Mocha.GET /" />
-      <item index="5" class="java.lang.String" itemvalue="Mocha.POST /queuecontainer/queue/err" />
-      <item index="6" class="java.lang.String" itemvalue="Mocha.POST /queuecontainer/queue/err.respond with json" />
+      <item index="2" class="java.lang.String" itemvalue="Mocha.GET /user" />
+      <item index="3" class="java.lang.String" itemvalue="Mocha.GET /" />
+      <item index="4" class="java.lang.String" itemvalue="Mocha.POST /queuecontainer/queue/err" />
+      <item index="5" class="java.lang.String" itemvalue="Mocha.POST /queuecontainer/queue/err.respond with json" />
+      <item index="6" class="java.lang.String" itemvalue="Mocha.asdasd" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Mocha.POST /queuecontainer/queue/err.respond with json" />
-        <item index="1" class="java.lang.String" itemvalue="Mocha.POST /queuecontainer/queue/err" />
-        <item index="2" class="java.lang.String" itemvalue="Mocha.GET /" />
-        <item index="3" class="java.lang.String" itemvalue="Mocha.GET /user" />
-        <item index="4" class="java.lang.String" itemvalue="Mocha.GET /user.respond with json" />
+        <item index="0" class="java.lang.String" itemvalue="Mocha.asdasd" />
+        <item index="1" class="java.lang.String" itemvalue="Mocha.POST /queuecontainer/queue/err.respond with json" />
+        <item index="2" class="java.lang.String" itemvalue="Mocha.POST /queuecontainer/queue/err" />
+        <item index="3" class="java.lang.String" itemvalue="Mocha.GET /" />
+        <item index="4" class="java.lang.String" itemvalue="Mocha.GET /user" />
       </list>
     </recent_temporary>
   </component>
@@ -558,44 +563,44 @@
       <workItem from="1487004136167" duration="16010000" />
       <workItem from="1487027179491" duration="29394000" />
       <workItem from="1487120882854" duration="18531000" />
-      <workItem from="1487186482048" duration="16752000" />
+      <workItem from="1487186482048" duration="27630000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GET__ - 2017.02.16 at 01h 46m 42s.xml">
-      <configuration name="GET /" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 02h 32m 33s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__ - 2017.02.16 at 01h 47m 24s.xml">
-      <configuration name="GET /" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 02h 33m 05s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__ - 2017.02.16 at 01h 48m 12s.xml">
-      <configuration name="GET /" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 02h 33m 20s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__ - 2017.02.16 at 01h 48m 52s.xml">
-      <configuration name="GET /" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 02h 33m 38s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__ - 2017.02.16 at 01h 49m 08s.xml">
-      <configuration name="GET /" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 02h 35m 18s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__ - 2017.02.16 at 01h 49m 20s.xml">
-      <configuration name="GET /" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 02h 36m 19s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__ - 2017.02.16 at 01h 49m 32s.xml">
-      <configuration name="GET /" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 02h 37m 07s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="POST__queuecontainer_queue_err - 2017.02.16 at 02h 07m 40s.xml">
-      <configuration name="POST /queuecontainer/queue/err" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 02h 37m 24s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="POST__queuecontainer_queue_err_respond_with_json - 2017.02.16 at 02h 09m 41s.xml">
-      <configuration name="POST /queuecontainer/queue/err.respond with json" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 02h 37m 47s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="POST__queuecontainer_queue_err_respond_with_json - 2017.02.16 at 02h 10m 09s.xml">
-      <configuration name="POST /queuecontainer/queue/err.respond with json" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="asdasd - 2017.02.17 at 03h 05m 19s.xml">
+      <configuration name="asdasd" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80687000" />
+    <option name="totallyTimeSpent" value="91565000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -608,19 +613,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12223393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19599578" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32940018" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32940018" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32940018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32940018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32940018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39921337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39921337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -637,7 +642,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="42" />
+      <option name="time" value="58" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -648,18 +653,11 @@
         <watch expression="queueArray.__proto__" />
         <watch expression="queueArray[&quot;bla&quot;]" language="JavaScript" />
         <watch expression="queueArray[&quot;asd&quot;]" language="JavaScript" />
+        <watch expression="this.events[event]" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/queue/Foo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/queue/queueManager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
@@ -857,25 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.4.7/core-modules/timers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="382" column="15" lean-forward="false" selection-start-line="382" selection-start-column="15" selection-end-line="382" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -907,14 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
@@ -922,14 +897,6 @@
           <folding>
             <marker date="1487197121787" expanded="true" signature="3786:3789" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queue/queue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,46 +920,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/queueTests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queue/queueManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1487200963625" expanded="true" signature="268:520" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/queue.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.4.7/core-modules/timers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="382" column="15" lean-forward="false" selection-start-line="382" selection-start-column="15" selection-end-line="382" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queue/queue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/IntegrationTests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="578">
+          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/queueTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/queue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queue/queueManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queue/myEmitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding />
         </state>
       </provider>
