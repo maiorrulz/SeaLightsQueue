@@ -11,7 +11,8 @@ router.get('/queue/:qname/longpoll', function (req, res, next) {
         var qname = req.params.qname;
 
         var callback = function (value) {
-            res.send(value);
+            result = "<h1>" + valuse + "</h1>"
+            res.send(result);
         }
 
         queueManager.longPollRequest(qname, callback);
