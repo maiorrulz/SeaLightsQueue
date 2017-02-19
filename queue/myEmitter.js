@@ -13,9 +13,9 @@ function MyEmmiter() {
  */
 MyEmmiter.prototype.on = function (event, uuid, listener) {
 
-    this.events[event] = this.events[event] || [];
-    listener.id = uuid;
-    this.events[event].push(listener);
+    this.events[event] = this.events[event] || {};
+    // listener.id = uuid;
+    this.events[event][uuid] = listener;
 
 }
 
@@ -41,21 +41,34 @@ MyEmmiter.prototype.emit = function (event,value) {
  * @param uuid - id
  * @param value - value passed to callback
  */
+// MyEmmiter.prototype.emitOnTimeout = function (event, uuid, value) {
+//
+//     if(this.events[event]) {
+//         var eventQueue = this.events[event];
+//         var index;
+//
+//         eventQueue.forEach(function (listener) {
+//             if(listener.id === uuid){
+//                 index = eventQueue.indexOf(listener);
+//                 listener(value);
+//             }
+//         })
+//         if(index !== undefined && index > -1) {
+//             this.events[event].splice(index,1);
+//         }
+//     }
+// }
 MyEmmiter.prototype.emitOnTimeout = function (event, uuid, value) {
 
     if(this.events[event]) {
         var eventQueue = this.events[event];
-        var index;
 
-        eventQueue.forEach(function (listener) {
-            if(listener.id === uuid){
-                index = eventQueue.indexOf(listener);
-                listener(value);
-            }
-        })
-        if(index !== undefined && index > -1) {
-            this.events[event].splice(index,1);
+        lstr = eventQueue[uuid];
+        if(lstr !== undefined)
+        {
+            lstr(value);
         }
+        delete eventQueue[uuid];
     }
 }
 
